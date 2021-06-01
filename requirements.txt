@@ -61,7 +61,7 @@ heapdict==1.0.0
 html5lib==1.0.1
 httplib2==0.18.1
 idna==2.8
-razorpay==2.11.1
+razorpay==1.2.0
 imageio==2.5.0
 imagesize==1.1.0
 importlib-metadata==3.3.0
