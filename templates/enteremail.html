@@ -1,0 +1,27 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Verify Email</title>    
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}"> 
+</head>    
+<body>    
+    <h1><b>Verify email</b></h1><br>    
+    <div class="login">    
+    <form id="login" method="post" action="/verify">   
+        <h5 style="color: green;">{{ infos }}</h5>
+        <label><b>Email :  
+        </b>    
+        </label> <br>   
+        <input type="text"  name="email" id="Uname" placeholder="Email" required="required"><br> 
+        <h5 style="color: red;">{{ info }}</h5> 
+        <input type="submit" name="log" id="log" value ="send Link" >       
+        <br>
+        
+
+ 
+    </form>     
+</div>    
+</body>    
+</html>

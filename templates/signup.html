@@ -1,0 +1,37 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Signup Form</title>    
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}"> 
+</head>    
+<body>    
+    <h1><b>Signup Page</b></h1><br>    
+    <div class="login">    
+    <form id="login" method="post" action="/validateSignup">   
+        <h5 style="color: green"> {{ infos }} </h5> 
+        <label><b>Email :  
+        </b>    
+        </label> <br>   
+        <input type="text"  name="email" id="Uname" placeholder="Email" required="required"><br><h5 style="color: red;"> {{ infosss }} </h5>    
+         
+        <label><b>Username :  
+        </b>    
+        </label> <br>   
+        <input type="text" name="username" id="Uname" placeholder="Username" required="required" >    
+        <br><h5 style="color: red;"> {{ infoss }} </h5>    
+        <label><b>Password :    
+        </b> 
+   
+        </label>   
+        <input type="Password" name="password" id="Pass" placeholder="Password" required="required">   
+        <br><h5 style="color: red"> {{ info }} </h5><br>    
+        <input type="submit" name="log" id="log" value ="sign up  here" >       
+        <br> 
+        <h5>or <a href="/loginpage">login</a> here!</h5>
+ 
+    </form>     
+</div>    
+</body>    
+</html>

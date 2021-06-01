@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Places</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/page2.css') }}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+			<nav class="navbar navbar-expand-md bg-dark">
+			<div class="container">
+			  <img src="{{ url_for('static', filename='img/logo.png') }}" alt="img" style="height: 55px;">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse navbar-right" id="collapsibleNavbar">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/">Home</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link textstyle1 ml-4 mr-4" href="#">Places</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/food">Food</a>
+			      </li> 
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/trekking">Trekking</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link textstyle ml-4 mr-4" href="/booking">Booking</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link textstyle ml-4 mr-4" href="/package">Package</a>
+				  </li>  
+				   <li class="nav-item">
+				        <a class="nav-link textstyle1 ml-4 mr-4  " href="#"style="padding-left:200px">{{ user }}</a>
+				      </li> 
+				      <li class="nav-item">
+				        <a class="nav-link textstyle1 ml-4 mr-4  " href="/logout" style="padding-left:10px">Logout</a>
+				      </li>
+			    </ul>
+		 	 </div> 
+		 </div> 
+		</nav>
+				<hr style="background-color:cyan; margin:0px; height: 10px;">
+		
+		<div class="head">
+		<h1>Here are some of the best places to visit in Dharamshala</h1>
+		</div>
+	<div class="container coln">
+		<div class="row">
+					<div class="col-sm-6">
+		<img src="{{ url_for('static', filename='img/dharamkot.png') }}" alt="img" class="w-27">
+					</div>
+			<div class="col-sm-6"
+				<p>Dharamkot is a place for all the hill station lovers. It is a small hill station located just above McLeod Ganj. The elevation of the hill station is around 2827m. One of the most interesting things about the place is that many
+				foreigners have started living in the  area because they liked it so much. This is truly 
+				fascinating because they live in village houses and guesthouses for many days.<br>
+
+				Location: The hill station is around 4 km from Mclo. You can easily find public transport
+				facilities to take you up there.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container coln">
+		<div class="row">
+			<div class="col-sm-6">
+				<p>For those who love waterfalls, Bhagsu waterfall has to be one of the most beautiful locations in Dharamshala. Most of the tourists that visit the place make sure they  spend some time here. It is peaceful, serene and gives you a nice feel of nature throughout. The place is also recommended by Lonely Planet.<br>
+
+				Location: It is at a 20 KM distance from the famous Bhagsunath temple which attract many visitors. The town of Bhagsu is mere 2 KM from Dharamshala, which is a major town in Himachal Pradesh. </p>
+			</div>
+			<div class="col-sm-6">
+				<img src="{{ url_for('static', filename='img/waterfall.png') }}" alt="img">
+			</div>
+		</div>
+	</div>
+	<div class="container coln">
+		<div class="row">
+					<div class="col-sm-6">
+			<img src="{{ url_for('static', filename='img/church.png') }}" alt="img" class="w-27">
+					</div>
+			<div class="col-sm-6"
+			<p>Yet another destination in the list of places to visit in Dharamshala is St John in the Wilderness church, which is tucked amidst the the lush green trails of deodar. The church exhibits the age-old architectural style of Gothics and owns a 
+			remarkable  feature which is the Belgian stain glassed windows. This place is just apt if you are  looking for a quiet place, where one can delve in a session of rediscoveries.
+			<br>
+			Location: The address is in Road to McLeod Ganj itself, McLeod Ganj.</p>
+			</div>
+		</div>
+	</div>
+		<div class="container coln">
+		<div class="row">
+			<div class="col-sm-6">
+			<p>Bir Billing is one of the best adventure places in India. Bir Billing is known for Paragliding, treks and a great spot for meditation. There is a major Tibetan 
+			community settlement in this town and the culture of Bir is highly influenced by Tibetan culture. This town is the hub of adventure-sports activities and paraglidingspots are abundant here. These activities are safe and all standards of safety are taken care of. People can also go for trekking in one of the most 
+			picturesque routesin Himachal. Besides this the Deer Park and the Bir Tea Factory are must-visits.<br>
+			Location : Bir is a village located in the west of Joginder Nagar Valley. Vehicles fromDharamsala are easily available.</p>
+			</div>
+			<div class="col-sm-6">
+					<img src="{{ url_for('static', filename='img/billing.png') }}" alt="img" class="w-27">
+			</div>
+		</div>
+	</div>
+	<div class="container coln">
+		<div class="row">
+			<div class="col-sm-6">
+			<img src="{{ url_for('static', filename='img/indrunag.png') }}" alt="img" class="w-27">
+			</div>
+			<div class="col-sm-6"
+				<p>Indrunag is one of the best sight-seeing spots of the valley. Also it is home to Indrunag Devta. The local people worship the diety and there is a temple on topof the hill. It also has a peaceful town where you can spend some peaceful moments.Paragliding is also available at low prices at Indrunag.<br>
+
+				Location: 10 km from Dharamsala. It is located in Khaniyara. Taxis are available .</p>
+			</div>
+		</div>
+	</div>		
+	<div class="container coln">
+		<div class="row">
+			<div class="col-sm-6">
+			<p>Boasting as one of the best Dharamshala tourist places, Dharamshala Cricket Stadium invites revelers from both near and far. This picturesque stadium is snuggled amidst the greens of the Himalayan range, and its lure is beyond one's  imagination. Also, it is seated at an elevation of almost 1,500 m and caters to various cricket  matches. Popularly it is famed as HPCA stadium!<br>
+
+			Location: The address is HPCA Cricket Stadium, Distt. Kangra, Dharamshala, Himachal Pradesh 176215.</p>
+			</div>
+			<div class="col-sm-6">
+				<img src="{{ url_for('static', filename='img/hpca.png') }}" alt="img" class="w-27">
+			</div>
+		</div>
+	</div>
+	<br>
+	<footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 new">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="img">
+                </div>
+
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    We are locals from the city of Dharamsala. 
+					We aim to better your travelling experience 
+					in this calm and soothing place. We will help
+					you explore the city in the best possible
+					way at cheapest rates.
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="https://himachal.nic.in/en-IN/helpline.html">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default" ><a href="/contact"  >Contact us</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2021 Copyright Text </p>
+        </div>
+    </footer>
+</div>
+	</body>
+</html>

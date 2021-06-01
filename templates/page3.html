@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>food</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/page3.css') }}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md bg-dark">
+			<div class="container">
+			  <img src="{{ url_for('static', filename='img/logo.png') }}" alt="img" style="height: 55px;">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse navbar-right" id="collapsibleNavbar">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/">Home</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/place">Places</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link textstyle1 ml-4 mr-4" href="#">Food</a>
+			      </li> 
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/trekking">Trekking</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link textstyle ml-4 mr-4" href="/booking">Booking</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link textstyle ml-4 mr-4" href="/package">Package</a>
+				  </li>   
+				  <li class="nav-item">
+				        <a class="nav-link textstyle1 ml-4 mr-4  "href="#" style="padding-left:200px">{{ user }}</a>
+				      </li> 
+				      <li class="nav-item">
+				        <a class="nav-link textstyle1 ml-4 mr-4  " href="/logout" style="padding-left:10px">Logout</a>
+				      </li>   
+			    </ul>
+			  </div> 
+			</div> 
+		</nav>
+				<hr style="background-color:cyan; margin:0px; height: 10px;">
+		<h1 class="head">Popular street foods</h1>
+		<div class="container">
+			<div class="row p-5">
+					<div class="col-sm-4">
+								<img src="{{ url_for('static', filename='img/img1.png') }}" alt="img">
+					</div>		
+					<div class="col-sm-4">
+									<img src="{{ url_for('static', filename='img/img2.png') }}" alt="img">
+					</div>						
+					<div class="col-sm-4">
+									<img src="{{ url_for('static', filename='img/img3.png') }}" alt="img">
+					</div>
+				</div>
+			</div>
+		
+				<div class="container">
+			<div class="row p-5">
+					<div class="col-sm-4">
+								<img src="{{ url_for('static', filename='img/img4.png') }}">
+					</div>		
+					<div class="col-sm-4">
+									<img src="{{ url_for('static', filename='img/img5.png') }}" alt="img">
+					</div>						
+					<div class="col-sm-4">
+									<img src="{{ url_for('static', filename='img/img6.png') }}" alt="img">
+					</div>
+				</div>
+			</div>
+		<br>
+		<h1 class="head">Popular Restraunts</h1>
+		<div class="container">
+			<div class="row p-5">
+					<div class="col-sm-6">
+										<img src="{{ url_for('static', filename='img/img7.png') }}" alt="img">
+										<div class="head2">
+											<h1>Illetrati</h1><br>
+											<h2>Location - Jogiwada</h2>
+										</div>
+					</div>		
+					<div class="col-sm-6">
+											<img src="{{ url_for('static', filename='img/img8.png') }}" alt="img">
+											<div class="head2">
+												<h1>Tibetian cafe</h1><br>
+												<h2>Location - Bhagsu</h2>
+											</div>
+					</div>						
+				</div>
+			</div>
+			<div class="container">
+				<div class="row p-5">
+					<div class="col-sm-6">
+						<img src="{{ url_for('static', filename='img/img8.png') }}" alt="img">
+						<div class="head2">
+							<h1>Tibetian Kitchen</h1><br>
+							<h2>Location - Mcleodganj</h2>
+						</div>
+					</div>		
+					<div class="col-sm-6">
+						<img src="{{ url_for('static', filename='img/img10.png') }}" alt="img">
+						<div class="head2">
+							<h1>Hotel Mclo</h1><br>
+							<h2>Location - Main Square</h2>
+						</div>
+					</div>						
+				</div>
+			</div>
+		<footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 new">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="img">
+                </div>
+
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    We are locals from the city of Dharamsala. 
+					We aim to better your travelling experience 
+					in this calm and soothing place. We will help
+					you explore the city in the best possible
+					way at cheapest rates.
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="https://himachal.nic.in/en-IN/helpline.html">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default" ><a href="/contact"  >Contact us</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2021 Copyright Text </p>
+        </div>
+    </footer>
+</div>
+	</body>
+</html>

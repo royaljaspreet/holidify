@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>trekking</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/page4.css') }}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body style="background-color: #1f2833">
+		<nav class="navbar navbar-expand-md bg-dark">
+			<div class="container">
+			  <img src="{{ url_for('static', filename='img/logo.png') }}" alt="img" style="height: 55px;">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse navbar-right" id="collapsibleNavbar">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/">Home</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/place">Places</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link textstyle ml-4 mr-4" href="/food">Food</a>
+			      </li> 
+			      <li class="nav-item">
+			        <a class="nav-link textstyle1 ml-4 mr-4"href="#" >Trekking</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link textstyle ml-4 mr-4" href="/booking">Booking</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link textstyle ml-4 mr-4" href="/package">Package</a>
+				  </li>  
+				   <li class="nav-item">
+				        <a class="nav-link textstyle1 ml-4 mr-4  " href="#" style="padding-left:200px">{{ user }}</a>
+				      </li> 
+				      <li class="nav-item">
+				        <a class="nav-link textstyle1 ml-4 mr-4  " href="/logout" style="padding-left:10px">Logout</a>
+				      </li>
+			    </ul>
+			  </div>
+		  	</div>  
+		</nav>
+				<hr style="background-color:cyan; margin:0px; height: 10px;">
+	<img src="{{ url_for('static', filename='img/triund.jpg') }}" alt="img"  class="w-100">
+	<div class="head"><br>
+	<h1>Triund Trek</h1></div><br>
+	<div class="textalign">
+		Triund is an easy trek in Himachal Pradesh that offers you an escape into the majestic Himalayas. Situated a few 
+		kilometres from Dharamshala at an altitude of 2828 m. It is a place perfect for trekking with amazing trails 
+		offering scenic views of the entire Kangra Valley. A trek to Triund is short and simple. It can be done from either McLeodganj or Dharamkot, which is 2 km ahead of McLeodganj. The first half of the trek is a gradually inclined walk with the last 2 km from Snowline Cafe which involves a vertical climb all the way till Triund. The evening sky from Triund is a sight in itself and is a good excuse for camping here at night.</p></div>
+
+	<hr style="background-color:white; margin:0px; height: 20px;">
+	<br>
+
+	<div class="gap"><img src="{{ url_for('static', filename='img/kareri1.jpg') }}" alt="img" class="w-100"></div>
+	<div class="head"><br>
+	<h1>Kareri Lake Trek</h1></div><br>
+	<div class="textalign">  
+		<p>A beautiful and picturesque lake, the Kareri Lakeseems like a place which has been picked straight   out of a Hollywood movie. Also known as Kumarwah Lake, this is a shallow, freshwater lake that is  situated to the south of the Dhauladhar range,  about 9 kilometres to the northwest of Dharamshala, in the Kangra District of Himachal Pradesh. Located  at an altitude of 2,934 metres above the sea level,  the Kareri Lake is also a popular trekking destination in the Dhauladhar range other than being a major  sightseeing attraction.</p></div>
+		<footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 new">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="img">
+                </div>
+
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    We are locals from the city of Dharamsala. 
+					We aim to better your travelling experience 
+					in this calm and soothing place. We will help
+					you explore the city in the best possible
+					way at cheapest rates.
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="https://himachal.nic.in/en-IN/helpline.html">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default" ><a href="/contact" >Contact us</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2021 Copyright Text </p>
+        </div>
+    </footer>
+</div>
+	</body>
+</html>

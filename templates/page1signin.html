@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Dharamsala</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/page1.css') }}">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script> 
+	</head>
+	<body style="background-color: #1f2833">
+		<nav class="navbar navbar-expand-md bg-dark">
+			<div class="container">	
+				  <img src="{{ url_for('static', filename='img/logo.png') }}" alt="img" style="height: 55px;">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse navbar-right" id="collapsibleNavbar">
+				    <ul class="navbar-nav ml-auto">
+				      <li class="nav-item">
+				        <a class="nav-link textstyle1 ml-4 mr-4"href="#" >Home</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link textstyle ml-4 mr-4" href="/place">Places</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link textstyle ml-4 mr-4" href="/food">Food</a>
+				      </li> 
+				      <li class="nav-item">
+				        <a class="nav-link textstyle ml-4 mr-4" href="/trekking">Trekking</a>
+					  </li>
+					  <li class="nav-item">
+				        <a class="nav-link textstyle ml-4 mr-4" href="/booking">Booking</a>
+					  </li>  
+					  <li class="nav-item">
+				        <a class="nav-link textstyle ml-4 mr-4" href="/package">Package</a>
+				      </li>
+				      
+				      <li class="nav-item">
+				        <a class="nav-link textstyle1 ml-4 mr-4  " href="/loginpage" style="padding-left:210px">Signin</a>
+				      </li>    
+				    </ul>
+				  </div>  
+				</div>
+		</nav>
+		<hr style="background-color:cyan; margin:0px; height: 10px;">
+
+		
+			<img src="{{ url_for('static', filename='img/dharamshala.jpg') }}" alt="img" class="w-100">
+			<br>
+		
+			<h1 class="textalign">Welcome to Dharamsala</h1>
+			<div class="row">
+				<div class="col">
+			<span class="line m-auto"></span>
+		</div>
+	</div>
+			<br>
+		<div class="container para">
+			<div class="rows">
+				Dharamsala (also spelled Dharamshala) is known as the home of the Dalai Lama, though in fact the Tibetan spiritual leader is based 3km
+				up the hill in McLeod Ganj, and that's where most visitors are heading. Dharamsala proper is  a market town a base for all useful travel 
+				connections.<br>
+				<br>
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="1004" height="502" id="gmap_canvas" src="https://maps.google.com/maps?q=Dharamshala,%20Himachal%20Pradesh%20Search%20Google%20Maps&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:502px;width:1004px;}</style><a href="https://www.embedgooglemap.net">google map for my website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:502px;width:1004px;}</style></div></div>
+			</p>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+			<div class="img">
+			<img src="{{ url_for('static', filename='img/down.png') }}" alt="img" class="w-100">
+			</div>
+	
+</div>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 new">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="img">
+                </div>
+
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    We are locals from the city of Dharamsala. 
+					We aim to better your travelling experience 
+					in this calm and soothing place. We will help
+					you explore the city in the best possible
+					way at cheapest rates.
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="https://himachal.nic.in/en-IN/helpline.html">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default" ><a href="/contact" >Contact us</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2021 Copyright Text </p>
+        </div>
+    </footer>
+</div>
+	</body>
+</html>

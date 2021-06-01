@@ -1,0 +1,36 @@
+
+
+
+<!-- <form action="/success" method="POST ,GET">
+<button id="rzp-button1" >Pay</button><script src="https://checkout.razorpay.com/v1/checkout.js"></script><script>var options = {    "key": "rzp_test_jt1NMWvEInSGIt", // Enter the Key ID generated from the Dashboard  
+
+            "amount": "{{payment['amount']}}", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise    
+        "currency": "INR",   
+         "name": "Holidify",
+             ,
+              "order_id": "{{payment['order_id']}}", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1   
+             "handler": function (response){        alert(response.razorpay_payment_id);        alert(response.razorpay_order_id);        alert(response.razorpay_signature)    },        
+           "theme": {        "color": "#3399cc"    }};
+     var rzp1 = new Razorpay(options);rzp1.on('payment.failed', function (response){        alert(response.error.code);        alert(response.error.description);        alert(response.error.source);        alert(response.error.step);        alert(response.error.reason);        alert(response.error.metadata.order_id);        alert(response.error.metadata.payment_id);});document.getElementById('rzp-button1').onclick = function(e){    rzp1.open();    e.preventDefault();}</script>  </form> -->
+
+
+
+
+     <form action="/success/{{ user }}/{{ description }}" method="POST , GET">
+        <script
+            src="https://checkout.razorpay.com/v1/checkout.js"
+            data-key="rzp_test_jt1NMWvEInSGIt"
+            data-amount="{{payment['amount']}}"
+            data-name="Holidify"
+            data-description="Purchase Description"
+            data-image="https://drive.google.com/file/d/1Ac8XyKpCXCgIyICgn3hJ-CQ9wxxVu2Rj/view?usp=sharing"
+            order_id= "{{payment['order_id']}}"
+            data-netbanking="true"
+            data-description="Tron Legacy"
+            data-prefill.name="Harshil Mathur"
+            data-prefill.email="harshil@razorpay.com"
+            data-prefill.contact="9999999999"
+            data-notes.shopping_order_id="21">
+        </script>
+        <input type="hidden" name="shopping_order_id" value="21">
+    </form>
